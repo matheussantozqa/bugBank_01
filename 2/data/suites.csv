@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","60129","Login com e-mail não cadastrado","","Thu Apr 23 15:39:34 UTC 2026","failed","Thu Apr 23 15:40:34 UTC 2026","","Login","",""
+"","60162","Criar conta com saldo","","Thu Apr 23 15:38:30 UTC 2026","failed","Thu Apr 23 15:39:30 UTC 2026","","Cadastro de conta","",""
