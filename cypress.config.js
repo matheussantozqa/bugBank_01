@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-preprocessor");
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 
 module.exports = defineConfig({
   e2e: {
@@ -14,10 +15,13 @@ module.exports = defineConfig({
       on("file:preprocessor", createBundler({
         plugins: [createEsbuildPlugin(config)],
       }));
+      allureWriter(on, config);
       return config;
     },
     env: {
-      stepDefinitions: "cypress/e2e/step-definitions/**/*.js"
+      stepDefinitions: "cypress/e2e/step-definitions/**/*.js",
+      allure: true,
+      allureResultsPath: "allure-results"
     }
   },
 });

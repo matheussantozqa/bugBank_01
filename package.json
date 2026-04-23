@@ -13,8 +13,9 @@
     "stepDefinitions": "cypress/e2e/step-definitions/**/*.js"
   },
   "devDependencies": {
-    "cypress": "^15.14.1",
     "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^15.14.1"
   }
 }
