@@ -1,0 +1,6 @@
+{
+  "url": "https://bugbank.netlify.app/",
+  "inputEmail": "[placeholder='Informe seu e-mail']",
+  "inputSenha": "[type='password']",
+  "btnAcessar": "[type='submit']"
+}
